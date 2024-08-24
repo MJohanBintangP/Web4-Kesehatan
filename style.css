@@ -1,0 +1,626 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: #F1F1F1;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .searchbox {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 8px 20px;
+    gap: 1.2rem;
+}
+.navbar .searchbox input {
+    color: #8E8E8E;
+    font-weight: 600;
+}
+
+.navbar .text .textcont {
+    display: flex;
+    gap: 2rem;
+}
+.navbar .text a {
+    color: #000;
+    font-weight: 500;
+}
+.navbar .textcont a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+.navbar .textcont a.active {
+    color: #7373FF;
+}
+
+.navbar .text a:hover {
+    color: #7373FF;
+}
+
+.navbar .icon a{
+    color: #000;   
+}
+.navbar .icon a:hover {
+    color: #7373FF;
+}
+
+.navbar .loginbox-cont {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.navbar .loginbox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar .loginbox a {
+    font-weight: 500;
+    color: #000;
+}
+.navbar .loginbox a:hover {
+    color: #7373FF;
+}
+.navbar .loginbox .circle {
+    background-color: #F7D8BA;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.navbar .loginbox .circle img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    background: none;
+}
+
+/* Page 1 */
+
+.page1 .konsulbox {
+    overflow: hidden;
+    background-color: #CBCBEF;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page1 .konsulbox .textbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.page1 .konsulbox .textbox .textinbox {
+    margin-bottom: 1rem;
+}
+.page1 .konsulbox .textbox h1 {
+    font-size: 30px;
+}
+.page1 .konsulbox .textbox p {
+    font-size: 25px;
+}
+.page1 .konsulbox .textbox .cta {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+.page1 .konsulbox .textbox .cta a {
+    color: #000;
+    font-weight: 600;
+}
+.page1 .konsulbox .textbox .cta a:hover {
+    color: #7373FF;
+}
+.page1 .konsulbox .imagedoctor {
+    margin-top: 10rem;
+    margin-right: 12rem;
+}
+
+.page1 .data {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 5rem;
+    margin-bottom: 2rem;
+}
+.page1 .data .boxdata1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 300px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    gap: 3rem;
+}
+.page1 .data .boxdata1 img{
+    margin-left: 2rem;
+}
+.page1 .data .boxdata1 h1 {
+    margin-right: 2rem;
+}
+.page1 .data .boxdata1 h1,.boxdata2 h1{
+    font-size: 20px;
+}
+.page1 .data .boxdata2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 450px;
+    width: 400px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+}
+.page1 .data .boxdata2 h1 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Page 2 */
+
+.page2 .judulhalaman {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.page2 .paragraf {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.page2 .trendingbox {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    height: 37px;
+    width: 147px;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    display: flex;
+    justify-content: center;
+}
+.page2 .trendingbox .text-trendingbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #7373FF;
+    font-weight: 600;
+}
+
+.page2 .imageartikel {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 6rem;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.page2 .imageartikel img {
+    border-radius: 10px;
+}
+.page2 .imageartikel .artikelfisrt h1 {
+    font-size: 25px;
+}
+.page2 .imageartikel .artikelsecond h1 {
+    font-size: 15px;
+}
+.page2 .imageartikel .artikelsecond {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* Page 3 */
+.page3 .judulhalaman {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.page3 .paragraf {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.page3 .slider-container {
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.page3 .horizontalbox {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.page3 .boxcontent {
+    display: flex;
+    width: 300%;
+    position: relative;
+}
+.page3 .boxcontent > div {
+    flex: 1 0 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.page3 .boxcontent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+.page3 .boxcontent .boxcontent1 .textbox, .boxcontent2 .textbox2 , .boxcontent3 .textbox3 {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 10rem;
+}
+.page3 .boxcontent .boxcontent1 .textbox h1,.boxcontent2 .textbox2 h1, .boxcontent3 .textbox3 h1  {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.page3 .boxcontent .boxcontent1 .textbox p , .boxcontent2 .textbox2 p, .boxcontent3 .textbox3 p {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.page3 .boxcontent .navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #000;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0;
+}
+.page3 .boxcontent span {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.page3 #prevButton {
+    left: 50px;
+}
+.page3 #nextButton {
+    right: 50px;
+}
+
+.page3 .infokes {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+.page3 .infokes .text h1{
+    font-size: 30px;
+}
+.page3 .infokes .text p{
+    font-size: 20px;
+}
+.page3 .infokes img{
+    border-radius: 10px;
+}
+
+/* Page 4 */
+.page4 .judulhalaman {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.page4 .paragraf {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.page4 .containerimage {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+.page4 .containerimage img {
+    object-fit: cover;
+}
+.page4 .containerimage .image1, .image2, .image3, .image4 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 190px;
+    height: 220px;
+    overflow: hidden;
+}
+.page4 .containerimage .image1 .teksinImage, .image2 .teksinImage2, .image3 .teksinImage3, .image4 .teksinImage4 {
+    margin-left: 0.5rem;
+}
+.page4 .containerimage .image1 .teksinImage p , .image2 .teksinImage2 p, .image3 .teksinImage3 p,.image4 .teksinImage4 p  {
+    font-size: 10px;
+}
+.page4 .containerimage .image1 .centerbox .diskusibox, .image2 .centerbox2 .diskusibox2, .image3 .centerbox3 .diskusibox3, .image4 .centerbox4 .diskusibox4  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.8rem;
+    background-color: #000;
+    border-radius: 10px;
+    width: 80px;
+    height: 25px;
+    color: #ffffff;
+    font-size: 10px;
+}
+.page4 .containerimage .image1 .centerbox, .image2 .centerbox2, .image3 .centerbox3, .image4 .centerbox4 {
+    display: flex;
+    justify-content: center;
+}
+
+.page4 .faqbox {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page4 .faqbox .faqtextbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.page4 .faqbox .faqtextbox .faqtextinbox {
+    margin-bottom: 1rem;
+}
+.page4 .faqbox .faqtextbox h1 {
+    font-size: 30px;
+}
+.page4 .faqbox .faqtextbox p {
+    font-size: 20px;
+}
+.page4 .faqbox .faqtextbox .faqcta {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+.page4 .faqbox .faqtextbox .faqcta a {
+    color: #000;
+    font-weight: 600;
+}
+.page4 .faqbox .faqtextbox .faqcta a:hover {
+    color: #7373FF;
+}
+.page4 .faqbox .faqimagedoctor {
+    margin-right: 12rem;
+}
+.page4 .faqbox .faqimagedoctor img {
+    border-radius: 10px;
+    width: 301px;
+    height: 202px;
+}
+.page4 .faqbox .faqimagedoctor h1 {
+    font-size: 20px;
+}
+.page4 .faqbox .faqimagedoctor p {
+    font-size: 15px;
+}
+
+/* LoginPage */
+#login {
+    background-color: #C8DAFF;
+}
+.LoginPage .loginLogo {
+    display: flex;
+    justify-content: center;
+}
+
+.LoginPage .contlogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+.LoginPage .contlogin .boxlogin {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 450px;
+    height: 620px;
+    margin: 0;
+    z-index: 1;
+}
+
+.LoginPage .contlogin .dokter1,
+.LoginPage .contlogin .dokter2 {
+    position: absolute;
+    bottom: 0;
+}
+
+.LoginPage .contlogin .dokter1 {
+    left: 0;
+    margin-left: 10rem;
+}
+
+.LoginPage .contlogin .dokter2 {
+    right: 0;
+    margin-right: 10rem;
+}
+
+.LoginPage .contlogin .boxlogin h1 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.LoginPage .contlogin .boxlogin .input1 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 15px;
+    border: 2px solid #8E8E8E;
+}
+.LoginPage .contlogin .boxlogin .input1 input {
+    background: none;
+    margin-left: 1rem;
+    font-weight: 400;
+    color: #8E8E8E;
+}
+.LoginPage .contlogin .boxlogin .input2 {
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #8E8E8E;
+}
+.LoginPage .contlogin .boxlogin .input2 input {
+    margin-left: 1rem;
+    font-weight: 400;
+    color: #8E8E8E;
+    background: none;
+}
+
+.LoginPage .contlogin .boxlogin .masukbox {
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #C8DAFF;
+}
+.LoginPage .contlogin .boxlogin .masukbox a{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: #000;
+}
+
+.LoginPage .contlogin .boxlogin .lupakatasandi {
+    color: #000;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+.LoginPage .contlogin .boxlogin .daftardisini {
+    color: #4200FF;
+    margin-left: 5px;
+}
+.LoginPage .contlogin .boxlogin .signup {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.LoginPage .contlogin .boxlogin .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.LoginPage .contlogin .boxlogin .line p {
+    font-weight: 600;
+}
+.LoginPage .contlogin .boxlogin .line .garis1 {
+    height: 1px;
+    width: 150px;
+    background-color: #000;
+}
+.LoginPage .contlogin .boxlogin .line .garis2 {
+    height: 1px;
+    width: 150px;
+    background-color: #000;
+}
+
+.LoginPage .contlogin .boxlogin .googlebox {
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #8E8E8E;
+}
+.LoginPage .contlogin .boxlogin .googlebox a {
+    margin-left: 0.3rem;
+    font-size: 15px;
+    color: #888888;
+}
+.LoginPage .contlogin .boxlogin .googlebox a span {
+    color: #000;
+    font-weight: 600;
+}
+.LoginPage .contlogin .boxlogin .twitterbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #8E8E8E;
+}
+.LoginPage .contlogin .boxlogin .twitterbox a {
+    margin-left: 1rem;
+    font-size: 15px;
+    color: #888888;
+}
+.LoginPage .contlogin .boxlogin .twitterbox a span {
+    color: #000;
+    font-weight: 600;
+}
